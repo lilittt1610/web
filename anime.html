@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимация</title>
+</head>
+<style>
+    #animation-container{
+        width: 600px;
+    }
+    body{
+        font-family: Arial;
+        color: rgb(57, 55, 170);
+    }
+    p{
+        font-size: 20px;
+
+    }
+</style>
+<body>
+    <h1>Эксперимент с анимацией Lotty</h1>
+    <p>Разработана для набора анимированных стикеров Telegram. <br>
+    Создавалась как шейповая анимация в программе Adobe After Effects. <br>
+(Автор Лилия Тычина)</p>
+    <div id="animation-container"></div>
+
+<script src="https://unpkg.com/lottie-web@5.9.1/build/player/lottie.min.js"></script> 
+<script>
+  lottie.loadAnimation({
+    container: document.getElementById('animation-container'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'poezd.json' 
+  });
+</script>
+</body>
+</html>
